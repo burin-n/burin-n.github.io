@@ -64,7 +64,7 @@ footer { margin-top: 24px; background: var(--subtle); border-top: 1px solid var(
   .about { grid-template-columns: 1fr; gap: 38px; padding: 54px 0; scroll-margin-top: 112px; }
   .section-title-row { align-items: flex-start; flex-direction: column; gap: 0; margin-bottom: 28px; }
   .section-title-row h2 { margin-bottom: 8px; }
-  .profile-photo { justify-self: start; }
+  .profile-photo { order: -1; justify-self: start; }
 }
 
 @media (max-width: 460px) {
