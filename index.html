@@ -32,7 +32,7 @@
           <nav aria-label="Main navigation">
             <a href="#about">About</a>
             <a href="#research">Research</a>
-            <a href="#publications">Publications</a>
+            <a href="#publications">Other publications</a>
             <a href="assets/Burin_CV.pdf" target="_blank" rel="noreferrer">CV</a>
           </nav>
           <button class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Switch to dark theme" title="Switch to dark theme">
@@ -89,7 +89,7 @@
       <section class="section" id="research">
         <h2>Selected research</h2>
         <div class="entries">
-          <article class="entry research-entry">
+          <article class="entry research-entry" id="word-timing-paper">
             <a class="research-figure" href="assets/slt_26/slt_fig.png" aria-label="View the word timing figure at full size">
               <img
                 src="assets/slt_26/slt_fig.png"
@@ -100,14 +100,20 @@
               />
             </a>
             <div class="research-copy">
-              <h3><a href="#word-timing-paper">Word timing in speech models</a></h3>
+              <h3>Deep Speech Representations Track Word Timing along a Low-Dimensional Circular Trajectory</h3>
+              <p><span class="author">Burin Naowarat</span>, Hao Tang, and Sharon Goldwater.</p>
+              <p class="venue">
+                SLT, 2026.
+                <a class="paper-link" href="https://arxiv.org/abs/2610.16273" target="_blank" rel="noreferrer">Paper ↗</a>
+                <a class="paper-link" href="https://github.com/burin-n/word_timing_trajectory" target="_blank" rel="noreferrer">Code ↗</a>
+              </p>
               <p>
                 We found that self-supervised, supervised, and codec speech models represent word timing along circular trajectories.
                 Using the end of each rotation in HuBERT’s representations to detect word boundaries, we achieved a boundary F-score of 64.3% on LibriSpeech.
               </p>
             </div>
           </article>
-          <article class="entry research-entry">
+          <article class="entry research-entry" id="concept-representations-paper">
             <a class="research-figure" href="assets/conll_26/overall_framwork_v10_cropped.png" aria-label="View the concept representations figure at full size">
               <img
                 src="assets/conll_26/overall_framwork_v10_cropped.png"
@@ -118,7 +124,14 @@
               />
             </a>
             <div class="research-copy">
-              <h3><a href="#concept-representations-paper">Concept representations in neural models</a></h3>
+              <h3>A framework for analyzing concept representations in neural models</h3>
+              <p><span class="author">Burin Naowarat</span>, Hao Tang, and Sharon Goldwater.</p>
+              <p class="venue">
+                CoNLL, 2026.
+                <a class="paper-link" href="https://aclanthology.org/2026.conll-main.34/" target="_blank" rel="noreferrer">Paper ↗</a>
+                <a class="paper-link" href="https://github.com/burin-n/concept_space" target="_blank" rel="noreferrer">Code ↗</a>
+                <a class="paper-link" href="assets/conll_26/poster_conll_2026_v7.pdf" target="_blank" rel="noreferrer">Poster ↗</a>
+              </p>
               <p>
                 We developed a framework for measuring how fully a subspace captures a concept and how well it separates that concept from others.
                 Comparing five estimators in speech and language models, we found that the choice of estimator affects both measures and can therefore shape conclusions about the structure of concept subspaces.
@@ -130,29 +143,10 @@
 
       <section class="section" id="publications">
         <div class="section-title-row">
-          <h2>Publications</h2>
+          <h2>Other publications</h2>
           <a href="https://scholar.google.co.uk/citations?user=7nsOVHsAAAAJ&amp;hl=en&amp;oi=ao">View on Google Scholar ↗</a>
         </div>
         <ol class="publication-list">
-          <li id="word-timing-paper">
-            <p><strong>Deep Speech Representations Track Word Timing along a Low-Dimensional Circular Trajectory</strong></p>
-            <p><span class="author">Burin Naowarat</span>, Hao Tang, and Sharon Goldwater.</p>
-            <p class="venue">
-              SLT, 2026.
-              <a class="paper-link" href="https://arxiv.org/abs/2610.16273" target="_blank" rel="noreferrer">Paper ↗</a>
-              <a class="paper-link" href="https://github.com/burin-n/word_timing_trajectory" target="_blank" rel="noreferrer">Code ↗</a>
-            </p>
-          </li>
-          <li id="concept-representations-paper">
-            <p><strong>A framework for analyzing concept representations in neural models</strong></p>
-            <p><span class="author">Burin Naowarat</span>, Hao Tang, and Sharon Goldwater.</p>
-            <p class="venue">
-              CoNLL, 2026.
-              <a class="paper-link" href="https://aclanthology.org/2026.conll-main.34/" target="_blank" rel="noreferrer">Paper ↗</a>
-              <a class="paper-link" href="https://github.com/burin-n/concept_space" target="_blank" rel="noreferrer">Code ↗</a>
-              <a class="paper-link" href="assets/conll_26/poster_conll_2026_v7.pdf" target="_blank" rel="noreferrer">Poster ↗</a>
-            </p>
-          </li>
           <li id="contextual-biasing-paper">
             <p><strong>Effective Training of Attention-based Contextual Biasing Adapters with Synthetic Audio for Personalised ASR</strong></p>
             <p><span class="author">Burin Naowarat</span>, Philip Harding, Pasquale D’Alterio, Sibo Tong, and Bashar Awwad Shiekh Hasan.</p>

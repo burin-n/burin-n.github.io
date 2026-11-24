@@ -67,15 +67,15 @@ h3 { margin: 0; font-size: 17px; }
 .profile-photo { display: block; width: 220px; max-width: 100%; height: auto; justify-self: end; border: 1px solid var(--border); border-radius: 6px; }
 
 .section { padding: 56px 0; border-top: 1px solid var(--border); }
-.section[id], .publication-list li[id] { scroll-margin-top: 80px; }
+.section[id], .publication-list li[id], .research-entry[id] { scroll-margin-top: 80px; }
 .section-title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; }
 .section-title-row > a { font-size: 14px; }
 .publication-list { margin: 0; padding-left: 28px; }
 .publication-list li { padding: 0 0 24px 8px; }
 .publication-list li::marker { color: var(--muted); font-size: 13px; }
 .publication-list p { margin: 2px 0; }
-.publication-list .author { text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 3px; }
-.publication-list .venue { color: var(--muted); font-size: 14px; }
+.publication-list .author, .research-copy .author { text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 3px; }
+.publication-list .venue, .research-copy .venue { color: var(--muted); font-size: 14px; }
 .paper-link { display: inline-block; margin-left: 8px; padding: 1px 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--subtle); font-size: 12px; font-weight: 600; }
 .paper-link:hover { background: var(--hover-background); text-decoration: none; }
 
@@ -83,7 +83,7 @@ h3 { margin: 0; font-size: 17px; }
 .research-entry {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
-  align-items: center;
+  align-items: start;
   gap: 28px;
 }
 .research-figure {
@@ -113,7 +113,7 @@ footer { margin-top: 24px; background: var(--subtle); border-top: 1px solid var(
   .header-actions { width: 100%; justify-content: space-between; }
   nav { flex: 1; gap: 0; justify-content: space-between; font-size: 12px; }
   .about { grid-template-columns: 1fr; gap: 38px; padding: 54px 0; scroll-margin-top: 112px; }
-  .section[id], .publication-list li[id] { scroll-margin-top: 120px; }
+  .section[id], .publication-list li[id], .research-entry[id] { scroll-margin-top: 120px; }
   .section-title-row { align-items: flex-start; flex-direction: column; gap: 0; margin-bottom: 28px; }
   .section-title-row h2 { margin-bottom: 8px; }
   .profile-photo { order: -1; justify-self: start; }
