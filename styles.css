@@ -67,6 +67,7 @@ h3 { margin: 0; font-size: 17px; }
 .profile-photo { display: block; width: 220px; max-width: 100%; height: auto; justify-self: end; border: 1px solid var(--border); border-radius: 6px; }
 
 .section { padding: 56px 0; border-top: 1px solid var(--border); }
+.section[id], .publication-list li[id] { scroll-margin-top: 80px; }
 .section-title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; }
 .section-title-row > a { font-size: 14px; }
 .publication-list { margin: 0; padding-left: 28px; }
@@ -79,11 +80,31 @@ h3 { margin: 0; font-size: 17px; }
 .paper-link:hover { background: var(--hover-background); text-decoration: none; }
 
 .entries { display: grid; gap: 42px; }
+.research-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: center;
+  gap: 28px;
+}
+.research-figure {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+}
+.research-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  border-radius: inherit;
+}
 .entry { max-width: 840px; }
 .entry-heading { display: flex; align-items: start; justify-content: space-between; gap: 30px; }
 .organisation { margin: 3px 0 0; color: var(--text); font-weight: 500; }
 .date { margin: 0; flex: none; color: var(--muted); font-size: 14px; }
-.entry > p { margin: 10px 0 0; color: var(--muted); }
+.entry > p, .research-copy > p { margin: 10px 0 0; color: var(--muted); }
 footer { margin-top: 24px; background: var(--subtle); border-top: 1px solid var(--border); color: var(--muted); font-size: 12px; }
 .footer-content { display: flex; min-height: 80px; align-items: center; justify-content: space-between; }
 
@@ -92,9 +113,11 @@ footer { margin-top: 24px; background: var(--subtle); border-top: 1px solid var(
   .header-actions { width: 100%; justify-content: space-between; }
   nav { flex: 1; gap: 0; justify-content: space-between; font-size: 12px; }
   .about { grid-template-columns: 1fr; gap: 38px; padding: 54px 0; scroll-margin-top: 112px; }
+  .section[id], .publication-list li[id] { scroll-margin-top: 120px; }
   .section-title-row { align-items: flex-start; flex-direction: column; gap: 0; margin-bottom: 28px; }
   .section-title-row h2 { margin-bottom: 8px; }
   .profile-photo { order: -1; justify-self: start; }
+  .research-entry { grid-template-columns: minmax(0, 1fr); gap: 16px; }
 }
 
 @media (max-width: 460px) {
